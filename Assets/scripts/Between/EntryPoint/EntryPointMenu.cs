@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class EntryPointMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private SetLanguageLocalization sll;
 
-    // Update is called once per frame
-    void Update()
+     void Start()
     {
-        
+        CSVReader.LoadCSV();
+        sll.Init();
     }
 }
