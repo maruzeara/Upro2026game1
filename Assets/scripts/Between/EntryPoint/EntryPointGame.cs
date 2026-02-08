@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class EntryPointGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject _prefabCharacter;
+    [SerializeField]
+    private CameraMove _camera;
 
-    // Update is called once per frame
-    void Update()
+     void Start()
     {
-        
+        GameObject chaarcter = Instantiate(_prefabCharacter, Vector3.zero, Quaternion.identity);
+        chaarcter.GetComponent<CharacterMove>().Init();
+
+        _camera.Init(chaarcter.transform);
     }
 }
