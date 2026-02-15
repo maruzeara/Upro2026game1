@@ -14,7 +14,7 @@ public class EventBus : MonoBehaviour
 
     public static Action<float> AOnSpeedCharacter;
     public static Action<float> AOnAddTimeDurationWeapon;
-    public static Action<float> AOnTimeSpeedWeapon;
+    public static Action<float> AOnAddTimeSpeedWeapon;
     public static Action<float> AOnAddTimeCreateEnemies;
 
     public static Func<byte, Vector2> Oncontroll;
@@ -22,7 +22,6 @@ public class EventBus : MonoBehaviour
 
     public static Func<byte, float> FOnSpeedCharacter;
     public static Func<byte, float> FOnAddTimeDurationWeapon;
-    public static Func<byte, float> FOnTimeSpeedWeapon;
+    public static Func<byte, float> FOnAddTimeSpeedWeapon;
     public static Func<byte, float> FOnAddTimeCreateEnemies;
-
 }
