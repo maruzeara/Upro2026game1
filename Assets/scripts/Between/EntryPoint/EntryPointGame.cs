@@ -8,12 +8,21 @@ public class EntryPointGame : MonoBehaviour
     private GameObject _prefabCharacter;
     [SerializeField]
     private CameraMove _camera;
-
+    [SerializeField]
+    private Weapon _prefadWeapon;
+    [SerializeField]
+    private WeaponManager _weaponManager;
      void Start()
     {
-        GameObject chaarcter = Instantiate(_prefabCharacter, Vector3.zero, Quaternion.identity);
-        chaarcter.GetComponent<CharacterInit>().Init();
+        GameObject character = Instantiate(_prefabCharacter, Vector3.zero, Quaternion.identity);
+        character.GetComponent<CharacterInit>().Init();
 
-        _camera.Init(chaarcter.transform);
+        _camera.Init(character.transform);
+
+        ObjectsPool.Instance.AddObjects(_prefadWeapon, 10);
+
+        _weaponManager.Init(character);
+        EventBus.OnAddWeapon?.Invoke(SaveCharacter.Instance.CurrentCharacter.PrefabWeapon);
     }
 }
+      
