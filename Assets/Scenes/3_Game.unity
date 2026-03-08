@@ -20691,6 +20691,7 @@ GameObject:
   - component: {fileID: 2099773365}
   - component: {fileID: 2099773364}
   - component: {fileID: 2099773366}
+  - component: {fileID: 2099773367}
   m_Layer: 0
   m_Name: point
   m_TagString: Untagged
@@ -20742,6 +20743,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabWeapon: {fileID: 3332417546956488078, guid: d6bff1fe788b708448517d6b3f18e6b0, type: 3}
+--- !u!114 &2099773367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099773363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b1576536f29194f9a0edad583c42ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabEnemy: {fileID: 5097333459494232088, guid: 9cc6d2113575a434abd90975b003832e, type: 3}
+  _waves:
+  - {fileID: 11400000, guid: a80bc2f72583b364bb484ec1b51064c4, type: 2}
+  - {fileID: 11400000, guid: 6b711abe5a1af5746b64c4a1eee98bac, type: 2}
+  - {fileID: 11400000, guid: b4a83d0fd3e2b3f4ba00ddec0632ab4b, type: 2}
+  - {fileID: 11400000, guid: 8e9ba74cc62df08458dbc2f36983ab24, type: 2}
+  - {fileID: 11400000, guid: 702531bc59f75b94bb02104f78435592, type: 2}
+  _currentWave: 0
 --- !u!1001 &1744900100718139378
 PrefabInstance:
   m_ObjectHideFlags: 0
