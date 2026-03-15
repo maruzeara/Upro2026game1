@@ -26,5 +26,10 @@ public class EntryPointGame : MonoBehaviour
 
         GetComponent<ControllWaves>().StartWaves();
     }
+
+    private void OnDestroy()
+    {
+        ObjectsPool.Instance.ClearAll();
+    }
 }
       

@@ -15,9 +15,9 @@ MonoBehaviour:
   _duration: 20
   _timeBeetwenSpawn: 2
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: dbfb39eda7bf76c4e802243081cdf984, type: 2}
+  - {fileID: 11400000, guid: dbfb39eda7bf76c4e802243081cdf984, type: 2}
+  - {fileID: 11400000, guid: 428c8b755581ca24c99e9dd4ceb49532, type: 2}
+  - {fileID: 11400000, guid: c8a5ea2c736cbe04d97151ee05084cd8, type: 2}
+  - {fileID: 11400000, guid: c8a5ea2c736cbe04d97151ee05084cd8, type: 2}
+  - {fileID: 11400000, guid: b045c049b8a403841af897b707165335, type: 2}

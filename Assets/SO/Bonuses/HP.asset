@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48535d6cb156eb24ca5f4766f09bd867, type: 3}
-  m_Name: Wave1
+  m_Script: {fileID: 11500000, guid: d5a48010367b95f469fbe5deda370205, type: 3}
+  m_Name: HP
   m_EditorClassIdentifier: 
-  _duration: 18
-  _timeBeetwenSpawn: 2
-  enemies:
-  - {fileID: 11400000, guid: dbfb39eda7bf76c4e802243081cdf984, type: 2}
-  - {fileID: 11400000, guid: 428c8b755581ca24c99e9dd4ceb49532, type: 2}
+  _sprite: {fileID: -617179207, guid: e440f189f5742d04684d1e01f14ecce9, type: 3}
+  _bonusType: 4

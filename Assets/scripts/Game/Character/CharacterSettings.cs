@@ -9,6 +9,7 @@ public class CharacterSettings : MonoBehaviour
     private float _addTimeDurationWeapon = 0;
     private float _addTimeSpeedWeapon = 1;
     private float _addTimeCreateEnemis = 0;
+    private float _addHPCharacter = 20;
 
     private float _hp;
 
@@ -18,6 +19,7 @@ public class CharacterSettings : MonoBehaviour
         EventBus.FOnAddTimeDurationWeapon += GetTDW;
         EventBus.FOnAddTimeSpeedWeapon += GetTSW;
         EventBus.FOnAddTimeCreateEnemies += GetTCE;
+        EventBus.AOnAddHPCharacter += HPCharacter;
 
         EventBus.AOnSpeedCharacter += AddSpeed;
         EventBus.AOnAddTimeDurationWeapon += AddTDW;
@@ -30,10 +32,17 @@ public class CharacterSettings : MonoBehaviour
         _hp = HP;
     }
 
+    private void HPCharacter(float obj)
+    {
+        _addHPCharacter += obj;
+    }
+
     private void AddTSW(float obj)
     {
         _addTimeSpeedWeapon += 2f;
     }
+
+    
 
     private float GetTSW(byte arg)
     {
@@ -94,11 +103,13 @@ public class CharacterSettings : MonoBehaviour
         EventBus.FOnAddTimeDurationWeapon -= GetTDW;
         EventBus.FOnAddTimeSpeedWeapon -= GetTSW;
         EventBus.FOnAddTimeCreateEnemies -= GetTCE;
+        EventBus.AOnAddHPCharacter -= HPCharacter;
 
         EventBus.AOnSpeedCharacter -= AddSpeed;
         EventBus.AOnAddTimeDurationWeapon -= AddTDW;
         EventBus.AOnAddTimeSpeedWeapon -= AddTSW;
         EventBus.AOnAddTimeCreateEnemies -= AddTCE;
+        
 
         EventBus.AOnsubHPCharacter -= SetHP;
         EventBus.FOnGetHPCharacter -= GetHP;

@@ -58,5 +58,10 @@ public class ObjectsPool : singleton<ObjectsPool>
         objects[obj.GetType().ToString()].Push(obj.gameObject);
 
     }
+
+    public void ClearAll()
+    {
+        objects.Clear();
+    }
 }
 

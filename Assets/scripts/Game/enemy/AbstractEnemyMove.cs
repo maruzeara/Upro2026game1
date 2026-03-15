@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AbstractEnemyMove : MonoBehaviour
+public abstract class AbstractEnemyMove 
 {
     protected Rigidbody2D _rb;
     protected Transform _targetTransform;

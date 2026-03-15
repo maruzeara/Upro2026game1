@@ -27,6 +27,9 @@ public class MarkerBonus : MonoBehaviour
             case BonusType.TCE:
                 gameObject.AddComponent<BonusTCE>();
                 break;
+            case BonusType.HPCharacter:
+                gameObject.AddComponent<BonusHP>();
+                break;
                 
 
         }

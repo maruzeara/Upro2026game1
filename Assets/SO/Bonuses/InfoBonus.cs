@@ -21,6 +21,7 @@ public enum BonusType
     Speed,
     TDW,
     TSW,
-    TCE
+    TCE,
+    HPCharacter
 }
 

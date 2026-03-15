@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MoveForward : AbstractEnemyMove
 {
-    private float _factorSpeed = 1.2f;
+    private float _factorSpeed = 0.2f;
     private Vector3 _target;
 
     public override void Init(Rigidbody2D rb, Transform trasform, Transform target, float speed)
